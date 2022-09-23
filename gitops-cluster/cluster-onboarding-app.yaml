@@ -10,7 +10,7 @@ spec:
   project: default
   source:
     path: cluster-onboarding
-    repoURL: https://github.com/r3dact3d/gitops
+    repoURL: https://github.com/taiseerhussein/gitops
     targetRevision: HEAD
     directory:
       recurse: true

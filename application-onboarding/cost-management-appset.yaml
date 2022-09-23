@@ -24,7 +24,7 @@ spec:
         server: '{{server}}'
       project: default
       source:
-        repoURL: 'https://github.com/r3dact3d/gitops'
+        repoURL: 'https://github.com/taiseerhussein/gitops'
         path: 'common-base/cost-management/overlays/{{values.env}}'
         targetRevision: HEAD
       syncPolicy:

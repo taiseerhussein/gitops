@@ -20,7 +20,7 @@ spec:
         server: '{{url}}'
       project: default
       source:
-        repoURL: 'https://github.com/r3dact3d/gitops'
+        repoURL: 'https://github.com/taiseerhussein/gitops'
         path: common-base/openshift-ingress-operator
         targetRevision: HEAD
       syncPolicy:

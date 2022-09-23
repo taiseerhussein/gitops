@@ -26,7 +26,7 @@ spec:
       name: 'hello-{{name}}'
     spec:
       source:
-        repoURL: 'https://github.com/r3dact3d/animated-bassoon'
+        repoURL: 'https://github.com/taiseerhussein/animated-bassoon'
         targetRevision: '{{values.revision}}'
         path: 'app/overlays/{{values.env}}'
       project: default

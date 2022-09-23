@@ -20,7 +20,7 @@ spec:
         server: '{{server}}'
       project: default
       source:
-        repoURL: 'https://github.com/r3dact3d/gitops'
+        repoURL: 'https://github.com/taiseerhussein/gitops'
         path: common-base/openshift-compliance
         targetRevision: HEAD
       syncPolicy:
