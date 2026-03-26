@@ -16,7 +16,7 @@ spec:
       name: 'appset-{{cluster}}'
     spec:
       source:
-        repoURL: 'https://github.com/r3dact3d/gitops'
+        repoURL: 'https://github.com/taiseerhussein/gitops'
         targetRevision: HEAD 
         path: 'appsets/applications/overlay/{{values.overlay}}'
       project: default
