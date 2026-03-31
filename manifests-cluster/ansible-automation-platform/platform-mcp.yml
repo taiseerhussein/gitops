@@ -1,0 +1,26 @@
+apiVersion: aap.ansible.com/v1alpha1
+kind: AnsibleAutomationPlatform
+metadata:
+  annotations:
+    argocd.argoproj.io/sync-options: SkipDryRunOnMissingResource=true
+  name: aap-mcp
+spec:
+  ## Platform
+  image_pull_policy: IfNotPresent
+  no_log: false
+
+  ################
+  ## Components ##
+  ################
+  controller:
+    disable: false
+  eda:
+    disable: false
+  hub:
+    disabled: true
+  lightspeed:
+    disabled: true
+  mcp:
+    disabled: false
+    allow_write_operations: false
+

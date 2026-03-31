@@ -27,6 +27,9 @@ spec:
     disable: false
   eda:
     disable: false
+  mcp:
+    disabled: true
+    allow_write_operations: false
   hub:
     disabled: false
     ## uncomment if using file storage for Content pod
@@ -49,4 +52,4 @@ spec:
 # * Automation controller deployed and named: platform-one-controller
 # * * Event-Driven Ansible deployed and named: platform-one-eda
 # * * Automation hub deployed and named: platform-one-hub
-
+# * * MCP disabled on this instance (dedicated MCP instance is `aap-mcp`)
