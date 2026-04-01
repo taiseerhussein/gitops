@@ -2,5 +2,4 @@ resources:
   - operator-group.yml
   - subscription.yml
   - platform.yml
-  - platform-mcp.yml
   - service-account.yml
