@@ -19,16 +19,16 @@
 - "name": "Default"
 - "name": "Watchdog"
 - "name": "Critical"
-- name: aap-event-stream
-    webhook_configs:
-      - url: https://platform-one-aap.apps.aap-test.sandbox3340.opentlc.com/eda-event-streams/api/eda/v1/external_event_stream/18b6be83-2a34-4074-85c3-aa1fcd01dcf3/post/
-        send_resolved: true
-        http_config:
-          basic_auth:
-            username_file: /etc/alertmanager/secrets/aap-event-stream-auth/username
-            password_file: /etc/alertmanager/secrets/aap-event-stream-auth/password
-          tls_config:
-            insecure_skip_verify: true
+- "name": "aap-event-stream"
+    "webhook_configs":
+      - "url": "https://platform-one-aap.apps.aap-test.sandbox3340.opentlc.com/eda-event-streams/api/eda/v1/external_event_stream/18b6be83-2a34-4074-85c3-aa1fcd01dcf3/post/"
+        "send_resolved": "true"
+        "http_config":
+          "basic_auth":
+            "username_file": "/etc/alertmanager/secrets/aap-event-stream-auth/username"
+            "password_file": "/etc/alertmanager/secrets/aap-event-stream-auth/password"
+          "tls_config":
+            "insecure_skip_verify": "true"
 #- "name": "Test Group"
 #  opsgenie_config:
 # The API key to use when talking to the OpsGenie API.
@@ -44,8 +44,8 @@
   "receiver": "Default"
   "repeat_interval": "12h"
   "routes":
-  - receiver: aap-event-stream
-      continue: true
+  - "receiver": "aap-event-stream"
+      "continue": "true"
   - "match":
       "alertname": "Watchdog"
     "receiver": "Watchdog"
